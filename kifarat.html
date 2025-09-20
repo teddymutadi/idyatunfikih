@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Kifarat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Kifarat</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal kifarat -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan kifarat dalam hukum Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Hukuman penjara</label>
+        <label><input type="radio" name="q1" value="b"> b. Tebusan/denda atas pelanggaran syariat</label>
+        <label><input type="radio" name="q1" value="c"> c. Hukuman cambuk</label>
+        <label><input type="radio" name="q1" value="d"> d. Hukum qishash</label>
+        <label><input type="radio" name="q1" value="e"> e. Hukum diyat</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Kifarat biasanya dikenakan pada kasus...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Sumpah yang dilanggar</label>
+        <label><input type="radio" name="q2" value="b"> b. Pencurian</label>
+        <label><input type="radio" name="q2" value="c"> c. Perampokan</label>
+        <label><input type="radio" name="q2" value="d"> d. Riddah</label>
+        <label><input type="radio" name="q2" value="e"> e. Zina</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Salah satu bentuk kifarat adalah memberi makan...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. 5 orang miskin</label>
+        <label><input type="radio" name="q3" value="b"> b. 10 orang miskin</label>
+        <label><input type="radio" name="q3" value="c"> c. 20 orang miskin</label>
+        <label><input type="radio" name="q3" value="d"> d. 30 orang miskin</label>
+        <label><input type="radio" name="q3" value="e"> e. 40 orang miskin</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Jika tidak mampu memberi makan miskin sebagai kifarat sumpah, maka gantinya adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Membayar uang</label>
+        <label><input type="radio" name="q4" value="b"> b. Memberi pakaian</label>
+        <label><input type="radio" name="q4" value="c"> c. Mengqadha shalat</label>
+        <label><input type="radio" name="q4" value="d"> d. Membaca istighfar</label>
+        <label><input type="radio" name="q4" value="e"> e. Mengerjakan haji</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Jika tidak mampu juga memberi pakaian, maka kifaratnya adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Memberi hadiah</label>
+        <label><input type="radio" name="q5" value="b"> b. Membebaskan budak</label>
+        <label><input type="radio" name="q5" value="c"> c. Berpuasa tiga hari</label>
+        <label><input type="radio" name="q5" value="d"> d. Membayar zakat</label>
+        <label><input type="radio" name="q5" value="e"> e. Shalat sunnah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Dalil tentang kifarat sumpah terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q6" value="b"> b. QS. An-Nisa ayat 92</label>
+        <label><input type="radio" name="q6" value="c"> c. QS. Al-Maidah ayat 89</label>
+        <label><input type="radio" name="q6" value="d"> d. QS. Al-Mulk ayat 2</label>
+        <label><input type="radio" name="q6" value="e"> e. QS. Yunus ayat 57</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Kifarat zhihar (menyamakan istri dengan ibu) adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Berpuasa dua bulan berturut-turut</label>
+        <label><input type="radio" name="q7" value="b"> b. Memberi makan 10 miskin</label>
+        <label><input type="radio" name="q7" value="c"> c. Membayar zakat</label>
+        <label><input type="radio" name="q7" value="d"> d. Membebaskan budak</label>
+        <label><input type="radio" name="q7" value="e"> e. Membayar fidyah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Jika seseorang melanggar sumpah, ia wajib membayar kifarat agar...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Bisa bebas dari dosa</label>
+        <label><input type="radio" name="q8" value="b"> b. Mendapatkan harta</label>
+        <label><input type="radio" name="q8" value="c"> c. Menghindari penjara</label>
+        <label><input type="radio" name="q8" value="d"> d. Mendapatkan jabatan</label>
+        <label><input type="radio" name="q8" value="e"> e. Mendapatkan warisan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Jika seseorang tidak mampu melaksanakan kifarat yang bersifat materi, maka jalan terakhir adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Shalat sunnah</label>
+        <label><input type="radio" name="q9" value="b"> b. Membaca doa</label>
+        <label><input type="radio" name="q9" value="c"> c. Puasa tiga hari</label>
+        <label><input type="radio" name="q9" value="d"> d. Membayar zakat fitrah</label>
+        <label><input type="radio" name="q9" value="e"> e. Sedekah harta</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Tujuan ditetapkannya hukum kifarat adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Memberatkan umat</label>
+        <label><input type="radio" name="q10" value="b"> b. Sebagai tebusan dan pembersih dosa</label>
+        <label><input type="radio" name="q10" value="c"> c. Membuat orang miskin sengsara</label>
+        <label><input type="radio" name="q10" value="d"> d. Menghapus hukum Islam</label>
+        <label><input type="radio" name="q10" value="e"> e. Membebaskan kewajiban agama</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzsFG1HRD-SQYNTwz7Y1V_moAtETB8krIBObJlxHmIn24-kpIMtk3CTUcB0PUqxxbDdlw/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["b","a","b","b","c","c","a","a","c","b"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

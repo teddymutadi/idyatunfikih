@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Qishash</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+    h2 { margin-bottom: 10px; }
+    label.input-field { display: inline-block; margin-bottom: 10px; }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block; padding: 6px 8px; margin-bottom: 4px;
+      border-radius: 6px; cursor: pointer; transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] { margin-right: 8px; vertical-align: middle; }
+    button {
+      padding: 10px 16px; margin-top: 12px; border-radius: 6px;
+      border: none; background: #1976d2; color: white;
+      cursor: pointer; font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Qishash</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 Soal Qishash -->
+    <div class="question">
+      <strong>1. Apa arti qishash dalam istilah fikih?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Hukuman cambuk</label>
+        <label><input type="radio" name="q1" value="b"> b. Balasan yang setimpal</label>
+        <label><input type="radio" name="q1" value="c"> c. Denda finansial</label>
+        <label><input type="radio" name="q1" value="d"> d. Hukuman penjara</label>
+        <label><input type="radio" name="q1" value="e"> e. Hukuman buang</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Dalil qishash terdapat dalam Al-Qur’an Surah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Al-Baqarah: 178</label>
+        <label><input type="radio" name="q2" value="b"> b. An-Nisa: 59</label>
+        <label><input type="radio" name="q2" value="c"> c. Al-Maidah: 3</label>
+        <label><input type="radio" name="q2" value="d"> d. Al-Anfal: 60</label>
+        <label><input type="radio" name="q2" value="e"> e. At-Taubah: 36</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Tujuan utama qishash menurut syariat Islam adalah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. Membalas dendam</label>
+        <label><input type="radio" name="q3" value="b"> b. Menjaga jiwa manusia</label>
+        <label><input type="radio" name="q3" value="c"> c. Membuat pelaku sengsara</label>
+        <label><input type="radio" name="q3" value="d"> d. Membebaskan pelaku</label>
+        <label><input type="radio" name="q3" value="e"> e. Menghapus semua dosa</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Dalam qishash, jika keluarga korban memaafkan, maka hukum qishash?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Tetap dilaksanakan</label>
+        <label><input type="radio" name="q4" value="b"> b. Gugur, diganti diyat atau bebas</label>
+        <label><input type="radio" name="q4" value="c"> c. Ditambah hukuman ta’zir</label>
+        <label><input type="radio" name="q4" value="d"> d. Diganti hukuman penjara</label>
+        <label><input type="radio" name="q4" value="e"> e. Diganti cambuk</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Apa hukum qishash bagi pembunuhan sengaja?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Hukuman mati</label>
+        <label><input type="radio" name="q5" value="b"> b. Diyat ringan</label>
+        <label><input type="radio" name="q5" value="c"> c. Ta’zir</label>
+        <label><input type="radio" name="q5" value="d"> d. Cambuk</label>
+        <label><input type="radio" name="q5" value="e"> e. Penjara</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Dalam Al-Baqarah:178 disebutkan “...Dan bagimu dalam qishash itu ada kehidupan...”. Maksudnya adalah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Qishash justru menambah pembunuhan</label>
+        <label><input type="radio" name="q6" value="b"> b. Qishash mencegah kejahatan dan menjaga nyawa</label>
+        <label><input type="radio" name="q6" value="c"> c. Qishash membuat pelaku menderita</label>
+        <label><input type="radio" name="q6" value="d"> d. Qishash menambah dosa</label>
+        <label><input type="radio" name="q6" value="e"> e. Qishash hanya simbol keadilan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Apa syarat utama diterapkannya qishash?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Ada saksi dan bukti jelas</label>
+        <label><input type="radio" name="q7" value="b"> b. Korban meninggal karena sakit</label>
+        <label><input type="radio" name="q7" value="c"> c. Pelaku masih anak-anak</label>
+        <label><input type="radio" name="q7" value="d"> d. Tidak ada laporan korban</label>
+        <label><input type="radio" name="q7" value="e"> e. Hakim menolak perkara</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Jika pembunuhan dilakukan tidak sengaja, maka hukumannya?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Qishash</label>
+        <label><input type="radio" name="q8" value="b"> b. Diyat dan kafarah</label>
+        <label><input type="radio" name="q8" value="c"> c. Penjara</label>
+        <label><input type="radio" name="q8" value="d"> d. Cambuk</label>
+        <label><input type="radio" name="q8" value="e"> e. Ta’zir ringan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Prinsip qishash adalah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Membalas dendam</label>
+        <label><input type="radio" name="q9" value="b"> b. Balasan setimpal (al-jaza’ min jins al-’amal)</label>
+        <label><input type="radio" name="q9" value="c"> c. Membuat pelaku miskin</label>
+        <label><input type="radio" name="q9" value="d"> d. Memberi efek jera</label>
+        <label><input type="radio" name="q9" value="e"> e. Memaafkan pelaku</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Dalam hadis Nabi disebutkan: “Hidup orang mukmin sebanding dengan hidup orang kafir dalam hal qishash.” Hadis ini menunjukkan?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Qishash hanya berlaku bagi muslim</label>
+        <label><input type="radio" name="q10" value="b"> b. Keadilan qishash berlaku untuk semua jiwa</label>
+        <label><input type="radio" name="q10" value="c"> c. Qishash tidak berlaku untuk kafir</label>
+        <label><input type="radio" name="q10" value="d"> d. Qishash boleh dipilih</label>
+        <label><input type="radio" name="q10" value="e"> e. Qishash tidak berlaku untuk pembunuhan</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbz2wPfJXBWvIG276-_dbLP2gMoVX8ecC0enD1R2z5chzLUf1o5jqkEwqFmKUZKuChn4/exec";
+
+    function koreksi() {
+      let skor = 0;
+      const kunci = ["b","a","b","b","a","b","a","b","b","b"]; // Kunci jawaban
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10;
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

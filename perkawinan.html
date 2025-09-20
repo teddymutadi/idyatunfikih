@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Perkawinan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #c2185b;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Perkawinan</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal perkawinan -->
+    <div class="question">
+      <strong>1. Apa pengertian perkawinan menurut fikih Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Ikatan lahir batin antara laki-laki dan perempuan untuk hidup bersama sesuai syariat</label>
+        <label><input type="radio" name="q1" value="b"> b. Hubungan antara dua keluarga</label>
+        <label><input type="radio" name="q1" value="c"> c. Hubungan adat istiadat</label>
+        <label><input type="radio" name="q1" value="d"> d. Perjanjian dagang</label>
+        <label><input type="radio" name="q1" value="e"> e. Hubungan sementara</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Apa hukum asal perkawinan dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Wajib</label>
+        <label><input type="radio" name="q2" value="b"> b. Sunnah</label>
+        <label><input type="radio" name="q2" value="c"> c. Haram</label>
+        <label><input type="radio" name="q2" value="d"> d. Makruh</label>
+        <label><input type="radio" name="q2" value="e"> e. Mubah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Dalil Al-Qur’an tentang anjuran menikah terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q3" value="b"> b. QS. An-Nur ayat 32</label>
+        <label><input type="radio" name="q3" value="c"> c. QS. Yunus ayat 57</label>
+        <label><input type="radio" name="q3" value="d"> d. QS. An-Nisa ayat 92</label>
+        <label><input type="radio" name="q3" value="e"> e. QS. Al-Maidah ayat 45</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Apa rukun perkawinan dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Calon mempelai, wali, dua saksi, ijab qabul</label>
+        <label><input type="radio" name="q4" value="b"> b. Mahar, saksi, doa</label>
+        <label><input type="radio" name="q4" value="c"> c. Wali, doa, pesta</label>
+        <label><input type="radio" name="q4" value="d"> d. Akad nikah saja</label>
+        <label><input type="radio" name="q4" value="e"> e. Restu orang tua</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Apa fungsi utama perkawinan dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Menambah harta</label>
+        <label><input type="radio" name="q5" value="b"> b. Menjaga keturunan dan kehormatan</label>
+        <label><input type="radio" name="q5" value="c"> c. Menambah relasi sosial</label>
+        <label><input type="radio" name="q5" value="d"> d. Mengurangi jumlah penduduk</label>
+        <label><input type="radio" name="q5" value="e"> e. Menjaga tradisi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Apa yang dimaksud dengan mahar?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Pemberian wajib dari calon suami kepada calon istri</label>
+        <label><input type="radio" name="q6" value="b"> b. Harta warisan</label>
+        <label><input type="radio" name="q6" value="c"> c. Harta zakat</label>
+        <label><input type="radio" name="q6" value="d"> d. Hibah dari keluarga</label>
+        <label><input type="radio" name="q6" value="e"> e. Uang pesta pernikahan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Apa syarat sahnya perkawinan?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Restu orang tua</label>
+        <label><input type="radio" name="q7" value="b"> b. Adanya wali, dua saksi adil, ijab qabul</label>
+        <label><input type="radio" name="q7" value="c"> c. Adanya pesta besar</label>
+        <label><input type="radio" name="q7" value="d"> d. Mahar mahal</label>
+        <label><input type="radio" name="q7" value="e"> e. Surat undangan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Pernikahan dalam Islam dianjurkan bagi orang yang...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Mampu secara fisik dan materi</label>
+        <label><input type="radio" name="q8" value="b"> b. Sudah berusia 10 tahun</label>
+        <label><input type="radio" name="q8" value="c"> c. Tidak suka belajar</label>
+        <label><input type="radio" name="q8" value="d"> d. Ingin mendapatkan harta</label>
+        <label><input type="radio" name="q8" value="e"> e. Sedang berperang</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Apa akibat jika perkawinan tidak dilakukan sesuai syariat?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Tetap sah</label>
+        <label><input type="radio" name="q9" value="b"> b. Tidak sah secara agama</label>
+        <label><input type="radio" name="q9" value="c"> c. Sah bila ada pesta</label>
+        <label><input type="radio" name="q9" value="d"> d. Sah bila ada mahar mahal</label>
+        <label><input type="radio" name="q9" value="e"> e. Tetap halal</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Apa hikmah utama dari perkawinan?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Menjaga diri dari zina</label>
+        <label><input type="radio" name="q10" value="b"> b. Memperbanyak keturunan</label>
+        <label><input type="radio" name="q10" value="c"> c. Menambah kerabat</label>
+        <label><input type="radio" name="q10" value="d"> d. Mendapatkan harta</label>
+        <label><input type="radio" name="q10" value="e"> e. Menambah pengalaman</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyhbDWyhfJ5d8yuo94TrGNCEzTFxwbMh75UR5Q2--6GrM18chTngnAYwg7KYuk8Ld4h/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["a","b","b","a","b","a","b","a","b","a"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

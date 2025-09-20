@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Zina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #d32f2f;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Zina</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal zina -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan zina dalam hukum Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Hubungan biologis yang sah dalam pernikahan</label>
+        <label><input type="radio" name="q1" value="b"> b. Hubungan biologis di luar pernikahan</label>
+        <label><input type="radio" name="q1" value="c"> c. Pertunangan antara laki-laki dan perempuan</label>
+        <label><input type="radio" name="q1" value="d"> d. Perceraian antara suami dan istri</label>
+        <label><input type="radio" name="q1" value="e"> e. Hubungan kekeluargaan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Hukuman zina bagi muhshan (sudah menikah) adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. 100 cambukan</label>
+        <label><input type="radio" name="q2" value="b"> b. Rajam sampai mati</label>
+        <label><input type="radio" name="q2" value="c"> c. Penjara 5 tahun</label>
+        <label><input type="radio" name="q2" value="d"> d. Hukuman ta’zir ringan</label>
+        <label><input type="radio" name="q2" value="e"> e. Denda harta</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Hukuman zina bagi ghairu muhshan (belum menikah) adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. Rajam</label>
+        <label><input type="radio" name="q3" value="b"> b. Hukuman mati</label>
+        <label><input type="radio" name="q3" value="c"> c. 100 cambukan</label>
+        <label><input type="radio" name="q3" value="d"> d. Hukuman ta’zir</label>
+        <label><input type="radio" name="q3" value="e"> e. Denda harta</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Apa syarat minimal jumlah saksi untuk membuktikan zina?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. 1 orang</label>
+        <label><input type="radio" name="q4" value="b"> b. 2 orang</label>
+        <label><input type="radio" name="q4" value="c"> c. 3 orang</label>
+        <label><input type="radio" name="q4" value="d"> d. 4 orang</label>
+        <label><input type="radio" name="q4" value="e"> e. 5 orang</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Dalil Al-Qur’an yang melarang zina terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. QS. An-Nisa ayat 92</label>
+        <label><input type="radio" name="q5" value="b"> b. QS. Al-Maidah ayat 45</label>
+        <label><input type="radio" name="q5" value="c"> c. QS. Al-Isra ayat 32</label>
+        <label><input type="radio" name="q5" value="d"> d. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q5" value="e"> e. QS. Yunus ayat 57</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Zina terbagi menjadi dua, yaitu...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Zina muhshan dan ghairu muhshan</label>
+        <label><input type="radio" name="q6" value="b"> b. Zina kecil dan besar</label>
+        <label><input type="radio" name="q6" value="c"> c. Zina rahasia dan terbuka</label>
+        <label><input type="radio" name="q6" value="d"> d. Zina sengaja dan tidak sengaja</label>
+        <label><input type="radio" name="q6" value="e"> e. Zina ringan dan berat</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Apa tujuan utama syariat Islam menetapkan hukum zina?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Membalas dendam</label>
+        <label><input type="radio" name="q7" value="b"> b. Menjaga keturunan dan kehormatan</label>
+        <label><input type="radio" name="q7" value="c"> c. Membuat pelaku sengsara</label>
+        <label><input type="radio" name="q7" value="d"> d. Memberikan kebebasan</label>
+        <label><input type="radio" name="q7" value="e"> e. Menghapus dosa dengan sendirinya</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Jika tuduhan zina tidak terbukti dengan saksi, penuduh dikenakan hukuman...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Diyat</label>
+        <label><input type="radio" name="q8" value="b"> b. Ta’zir</label>
+        <label><input type="radio" name="q8" value="c"> c. Qadzaf (80 cambukan)</label>
+        <label><input type="radio" name="q8" value="d"> d. Rajam</label>
+        <label><input type="radio" name="q8" value="e"> e. Denda uang</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Hukum zina termasuk dalam kategori...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Hudud</label>
+        <label><input type="radio" name="q9" value="b"> b. Qishash</label>
+        <label><input type="radio" name="q9" value="c"> c. Ta’zir</label>
+        <label><input type="radio" name="q9" value="d"> d. Diyat</label>
+        <label><input type="radio" name="q9" value="e"> e. Fardhu kifayah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Apa akibat sosial dari tersebarnya zina di masyarakat?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Menjaga keturunan</label>
+        <label><input type="radio" name="q10" value="b"> b. Meningkatkan kehormatan</label>
+        <label><input type="radio" name="q10" value="c"> c. Merusak moral dan keturunan</label>
+        <label><input type="radio" name="q10" value="d"> d. Membuat masyarakat adil</label>
+        <label><input type="radio" name="q10" value="e"> e. Membawa kedamaian</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw7Vf5q8555Hwj5GiLBVAKFE_wBIeGiF53huVjxuqy84kxgzWtt_XycOk1-NHzQiVY/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["b","b","c","d","c","a","b","c","a","c"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

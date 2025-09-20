@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Peradilan Islam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Peradilan Islam</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal peradilan Islam -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan peradilan Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Sistem hukum adat</label>
+        <label><input type="radio" name="q1" value="b"> b. Sistem hukum berdasarkan Al-Qur’an dan Sunnah</label>
+        <label><input type="radio" name="q1" value="c"> c. Hukum buatan manusia</label>
+        <label><input type="radio" name="q1" value="d"> d. Kesepakatan adat istiadat</label>
+        <label><input type="radio" name="q1" value="e"> e. Peraturan kolonial</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Lembaga yang menjalankan peradilan Islam disebut...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Mahkamah syar’iyah</label>
+        <label><input type="radio" name="q2" value="b"> b. Mahkamah konstitusi</label>
+        <label><input type="radio" name="q2" value="c"> c. Pengadilan negeri</label>
+        <label><input type="radio" name="q2" value="d"> d. Majelis adat</label>
+        <label><input type="radio" name="q2" value="e"> e. Dewan kota</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Dalil tentang perintah menegakkan keadilan terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. QS. An-Nisa ayat 58</label>
+        <label><input type="radio" name="q3" value="b"> b. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q3" value="c"> c. QS. Yunus ayat 57</label>
+        <label><input type="radio" name="q3" value="d"> d. QS. Al-Maidah ayat 3</label>
+        <label><input type="radio" name="q3" value="e"> e. QS. Al-Isra ayat 32</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Siapakah tokoh peradilan Islam yang terkenal pada masa Khulafaur Rasyidin?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Abu Hurairah</label>
+        <label><input type="radio" name="q4" value="b"> b. Qadhi Syuraih</label>
+        <label><input type="radio" name="q4" value="c"> c. Imam Bukhari</label>
+        <label><input type="radio" name="q4" value="d"> d. Imam Ghazali</label>
+        <label><input type="radio" name="q4" value="e"> e. Khalid bin Walid</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Peradilan Islam bertujuan untuk...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Membela kelompok tertentu</label>
+        <label><input type="radio" name="q5" value="b"> b. Menegakkan keadilan sesuai syariat</label>
+        <label><input type="radio" name="q5" value="c"> c. Menambah pajak negara</label>
+        <label><input type="radio" name="q5" value="d"> d. Menjaga kepentingan politik</label>
+        <label><input type="radio" name="q5" value="e"> e. Menjaga tradisi lokal</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Siapakah yang memiliki wewenang mengangkat hakim dalam peradilan Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Rakyat</label>
+        <label><input type="radio" name="q6" value="b"> b. Khalifah atau pemerintah</label>
+        <label><input type="radio" name="q6" value="c"> c. Ulama secara kolektif</label>
+        <label><input type="radio" name="q6" value="d"> d. Tokoh adat</label>
+        <label><input type="radio" name="q6" value="e"> e. Pemimpin kabilah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Apa syarat utama seorang hakim dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Kaya raya</label>
+        <label><input type="radio" name="q7" value="b"> b. Adil dan berilmu</label>
+        <label><input type="radio" name="q7" value="c"> c. Keturunan bangsawan</label>
+        <label><input type="radio" name="q7" value="d"> d. Punya banyak harta</label>
+        <label><input type="radio" name="q7" value="e"> e. Pernah menjadi tentara</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Apa perbedaan peradilan Islam dengan peradilan sekuler?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Peradilan Islam berdasarkan syariat, sekuler berdasarkan hukum buatan manusia</label>
+        <label><input type="radio" name="q8" value="b"> b. Tidak ada perbedaan</label>
+        <label><input type="radio" name="q8" value="c"> c. Peradilan sekuler lebih adil</label>
+        <label><input type="radio" name="q8" value="d"> d. Peradilan Islam hanya untuk pidana</label>
+        <label><input type="radio" name="q8" value="e"> e. Peradilan sekuler tidak mengenal hukum</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Peradilan Islam berfungsi sebagai...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Pelindung hukum adat</label>
+        <label><input type="radio" name="q9" value="b"> b. Penegak hukum syariat</label>
+        <label><input type="radio" name="q9" value="c"> c. Pengatur ekonomi</label>
+        <label><input type="radio" name="q9" value="d"> d. Lembaga dakwah</label>
+        <label><input type="radio" name="q9" value="e"> e. Dewan budaya</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Apa akibat jika peradilan Islam tidak ditegakkan?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Masyarakat menjadi damai</label>
+        <label><input type="radio" name="q10" value="b"> b. Keadilan akan terabaikan</label>
+        <label><input type="radio" name="q10" value="c"> c. Umat semakin bersatu</label>
+        <label><input type="radio" name="q10" value="d"> d. Ekonomi meningkat</label>
+        <label><input type="radio" name="q10" value="e"> e. Semua peraturan berjalan baik</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyBizaxRElH3lzEeNqSFyMuv4eMhtqA2wiXFciSjR3aDY26nBjK-i59NJYm-tR-t2jP7A/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["b","a","a","b","b","b","b","a","b","b"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

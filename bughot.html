@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Bughot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #388e3c;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Bughot</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal bughot -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan bughot dalam fikih Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Pembunuhan tanpa sengaja</label>
+        <label><input type="radio" name="q1" value="b"> b. Pemberontakan terhadap pemimpin sah</label>
+        <label><input type="radio" name="q1" value="c"> c. Tuduhan zina tanpa saksi</label>
+        <label><input type="radio" name="q1" value="d"> d. Mencuri harta orang lain</label>
+        <label><input type="radio" name="q1" value="e"> e. Meninggalkan shalat wajib</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Bughot biasanya dilakukan oleh...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Individu yang salah paham</label>
+        <label><input type="radio" name="q2" value="b"> b. Sekelompok orang yang menentang pemerintah sah</label>
+        <label><input type="radio" name="q2" value="c"> c. Anak kecil</label>
+        <label><input type="radio" name="q2" value="d"> d. Orang asing</label>
+        <label><input type="radio" name="q2" value="e"> e. Perempuan dan anak-anak</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Dalil tentang bughot terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. QS. An-Nisa ayat 92</label>
+        <label><input type="radio" name="q3" value="b"> b. QS. Al-Maidah ayat 45</label>
+        <label><input type="radio" name="q3" value="c"> c. QS. Al-Hujurat ayat 9</label>
+        <label><input type="radio" name="q3" value="d"> d. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q3" value="e"> e. QS. Yunus ayat 57</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Apa sikap pemerintah terhadap kelompok bughot?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Membiarkan</label>
+        <label><input type="radio" name="q4" value="b"> b. Menasihati dan mendamaikan terlebih dahulu</label>
+        <label><input type="radio" name="q4" value="c"> c. Langsung memerangi</label>
+        <label><input type="radio" name="q4" value="d"> d. Mengasingkan mereka</label>
+        <label><input type="radio" name="q4" value="e"> e. Menghukum dengan diyat</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Jika kelompok bughot kembali taat, maka...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Mereka tetap dihukum</label>
+        <label><input type="radio" name="q5" value="b"> b. Hukuman dicabut dan perdamaian ditegakkan</label>
+        <label><input type="radio" name="q5" value="c"> c. Mereka dibuang dari negeri</label>
+        <label><input type="radio" name="q5" value="d"> d. Mereka dipenjara seumur hidup</label>
+        <label><input type="radio" name="q5" value="e"> e. Mereka dikenakan qishash</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Apa perbedaan antara bughot dan hirabah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Bughot adalah pemberontakan, hirabah adalah perampokan</label>
+        <label><input type="radio" name="q6" value="b"> b. Bughot untuk individu, hirabah untuk kelompok</label>
+        <label><input type="radio" name="q6" value="c"> c. Bughot dihukum mati, hirabah diyat</label>
+        <label><input type="radio" name="q6" value="d"> d. Tidak ada perbedaan</label>
+        <label><input type="radio" name="q6" value="e"> e. Bughot untuk kafir, hirabah untuk muslim</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Apa tujuan hukum Islam menetapkan hukum bughot?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Membalas dendam</label>
+        <label><input type="radio" name="q7" value="b"> b. Menjaga stabilitas dan persatuan umat</label>
+        <label><input type="radio" name="q7" value="c"> c. Memberi kebebasan memberontak</label>
+        <label><input type="radio" name="q7" value="d"> d. Menambah penderitaan rakyat</label>
+        <label><input type="radio" name="q7" value="e"> e. Menghapus hukum Islam</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Jika kelompok bughot menolak perdamaian, maka langkah selanjutnya adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Membiarkan mereka</label>
+        <label><input type="radio" name="q8" value="b"> b. Memerangi hingga kembali taat</label>
+        <label><input type="radio" name="q8" value="c"> c. Mengusir dari negara</label>
+        <label><input type="radio" name="q8" value="d"> d. Memberi diyat</label>
+        <label><input type="radio" name="q8" value="e"> e. Memberi jabatan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Bughot termasuk dalam kategori hukum...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Hudud</label>
+        <label><input type="radio" name="q9" value="b"> b. Qishash</label>
+        <label><input type="radio" name="q9" value="c"> c. Ta’zir</label>
+        <label><input type="radio" name="q9" value="d"> d. Jinayah</label>
+        <label><input type="radio" name="q9" value="e"> e. Fardhu kifayah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Bughot berkaitan dengan pelanggaran terhadap...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Harta</label>
+        <label><input type="radio" name="q10" value="b"> b. Jiwa</label>
+        <label><input type="radio" name="q10" value="c"> c. Kehormatan</label>
+        <label><input type="radio" name="q10" value="d"> d. Kekuasaan negara</label>
+        <label><input type="radio" name="q10" value="e"> e. Akidah</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxxhhK2mMZNLqXLVz6c3bZl4PWqZcHGQkMmc8aV8eo1AmaPWfSEh6eg074XCCy_wALo/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["b","b","c","b","b","a","b","b","c","d"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

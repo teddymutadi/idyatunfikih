@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Ilmu Faraid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #2e7d32;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Ilmu Faraid</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal ilmu faraid -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan ilmu faraid?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Ilmu tentang pembagian harta warisan menurut syariat Islam</label>
+        <label><input type="radio" name="q1" value="b"> b. Ilmu tentang jual beli</label>
+        <label><input type="radio" name="q1" value="c"> c. Ilmu tentang perkawinan</label>
+        <label><input type="radio" name="q1" value="d"> d. Ilmu tentang zakat</label>
+        <label><input type="radio" name="q1" value="e"> e. Ilmu tentang jinayah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Dalil tentang faraid terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. QS. An-Nisa ayat 11</label>
+        <label><input type="radio" name="q2" value="b"> b. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q2" value="c"> c. QS. Al-Maidah ayat 45</label>
+        <label><input type="radio" name="q2" value="d"> d. QS. Al-Baqarah ayat 229</label>
+        <label><input type="radio" name="q2" value="e"> e. QS. Yunus ayat 57</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Ilmu faraid juga dikenal dengan sebutan...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. Ilmu mawaris</label>
+        <label><input type="radio" name="q3" value="b"> b. Ilmu muamalah</label>
+        <label><input type="radio" name="q3" value="c"> c. Ilmu hudud</label>
+        <label><input type="radio" name="q3" value="d"> d. Ilmu ibadah</label>
+        <label><input type="radio" name="q3" value="e"> e. Ilmu jinayah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Bagian anak laki-laki dibanding anak perempuan dalam faraid adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Dua banding satu</label>
+        <label><input type="radio" name="q4" value="b"> b. Sama rata</label>
+        <label><input type="radio" name="q4" value="c"> c. Sepertiga</label>
+        <label><input type="radio" name="q4" value="d"> d. Seperempat</label>
+        <label><input type="radio" name="q4" value="e"> e. Seperdelapan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Ilmu faraid termasuk dalam kategori hukum...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Muamalah</label>
+        <label><input type="radio" name="q5" value="b"> b. Hudud</label>
+        <label><input type="radio" name="q5" value="c"> c. Jinayah</label>
+        <label><input type="radio" name="q5" value="d"> d. Ibadah</label>
+        <label><input type="radio" name="q5" value="e"> e. Ta’zir</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Siapa saja yang termasuk dzawil furudh (ahli waris yang mendapat bagian pasti)?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Anak perempuan, suami, istri, ayah, ibu</label>
+        <label><input type="radio" name="q6" value="b"> b. Semua kerabat</label>
+        <label><input type="radio" name="q6" value="c"> c. Anak laki-laki saja</label>
+        <label><input type="radio" name="q6" value="d"> d. Cucu laki-laki saja</label>
+        <label><input type="radio" name="q6" value="e"> e. Saudara sepupu</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Bagian ibu dari harta waris anaknya adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. 1/3 jika tidak ada anak</label>
+        <label><input type="radio" name="q7" value="b"> b. 1/6 jika ada anak</label>
+        <label><input type="radio" name="q7" value="c"> c. 1/2 dalam semua keadaan</label>
+        <label><input type="radio" name="q7" value="d"> d. 2/3 jika tidak ada ayah</label>
+        <label><input type="radio" name="q7" value="e"> e. 1/8 jika ada cucu</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Ilmu faraid disebut juga sebagai ilmu yang...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Setengah dari ilmu agama</label>
+        <label><input type="radio" name="q8" value="b"> b. Ilmu tambahan</label>
+        <label><input type="radio" name="q8" value="c"> c. Ilmu sekunder</label>
+        <label><input type="radio" name="q8" value="d"> d. Ilmu ekonomi</label>
+        <label><input type="radio" name="q8" value="e"> e. Ilmu duniawi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Hikmah mempelajari ilmu faraid adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Menjaga keadilan dalam pembagian harta</label>
+        <label><input type="radio" name="q9" value="b"> b. Membuat ahli waris kaya raya</label>
+        <label><input type="radio" name="q9" value="c"> c. Menghapus kewajiban zakat</label>
+        <label><input type="radio" name="q9" value="d"> d. Membuat keluarga berpisah</label>
+        <label><input type="radio" name="q9" value="e"> e. Mengurangi jumlah warisan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Ilmu faraid ditinggalkan banyak orang padahal Rasulullah bersabda bahwa...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Faraid adalah setengah dari ilmu</label>
+        <label><input type="radio" name="q10" value="b"> b. Faraid tidak penting</label>
+        <label><input type="radio" name="q10" value="c"> c. Faraid hanya untuk ulama</label>
+        <label><input type="radio" name="q10" value="d"> d. Faraid bisa dihapus</label>
+        <label><input type="radio" name="q10" value="e"> e. Faraid hanya berlaku di Arab</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyDW8Jc_dxhP63CaXsB_dLOYDhmS5a2d13XF3P7QxlcWK840Dx0brBy4WxsjRbd6OA4zA/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["a","a","a","a","a","a","a","a","a","a"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

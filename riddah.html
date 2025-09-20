@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Riddah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #e65100;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Riddah</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal riddah -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan riddah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Pindah agama dari Islam ke agama lain</label>
+        <label><input type="radio" name="q1" value="b"> b. Menuduh zina tanpa bukti</label>
+        <label><input type="radio" name="q1" value="c"> c. Melakukan pencurian</label>
+        <label><input type="radio" name="q1" value="d"> d. Membunuh tanpa sengaja</label>
+        <label><input type="radio" name="q1" value="e"> e. Meninggalkan shalat karena malas</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Apa dasar hukum riddah dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Ijma’ ulama</label>
+        <label><input type="radio" name="q2" value="b"> b. Dalil Al-Qur’an dan Hadits</label>
+        <label><input type="radio" name="q2" value="c"> c. Adat istiadat</label>
+        <label><input type="radio" name="q2" value="d"> d. Pendapat pemerintah</label>
+        <label><input type="radio" name="q2" value="e"> e. Akal semata</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Dalil tentang riddah terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. QS. Al-Baqarah ayat 217</label>
+        <label><input type="radio" name="q3" value="b"> b. QS. Al-Maidah ayat 45</label>
+        <label><input type="radio" name="q3" value="c"> c. QS. An-Nur ayat 4</label>
+        <label><input type="radio" name="q3" value="d"> d. QS. Yunus ayat 57</label>
+        <label><input type="radio" name="q3" value="e"> e. QS. Al-Isra ayat 32</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Hukuman bagi orang yang murtad menurut mayoritas ulama adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. 100 cambukan</label>
+        <label><input type="radio" name="q4" value="b"> b. Hukuman mati setelah diminta bertaubat</label>
+        <label><input type="radio" name="q4" value="c"> c. Penjara seumur hidup</label>
+        <label><input type="radio" name="q4" value="d"> d. Diyat</label>
+        <label><input type="radio" name="q4" value="e"> e. Tidak ada hukuman</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Sebelum dijatuhi hukuman, orang murtad diberi kesempatan...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Untuk membayar denda</label>
+        <label><input type="radio" name="q5" value="b"> b. Untuk bertaubat dan kembali ke Islam</label>
+        <label><input type="radio" name="q5" value="c"> c. Untuk pindah negara</label>
+        <label><input type="radio" name="q5" value="d"> d. Untuk memilih agama lain</label>
+        <label><input type="radio" name="q5" value="e"> e. Untuk menikah lagi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Apa dampak sosial dari riddah dalam masyarakat Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Menjaga stabilitas</label>
+        <label><input type="radio" name="q6" value="b"> b. Merusak akidah dan melemahkan umat</label>
+        <label><input type="radio" name="q6" value="c"> c. Meningkatkan persatuan</label>
+        <label><input type="radio" name="q6" value="d"> d. Membawa kemakmuran</label>
+        <label><input type="radio" name="q6" value="e"> e. Meningkatkan ekonomi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Riddah dapat dilakukan dengan cara...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Perkataan, perbuatan, atau keyakinan</label>
+        <label><input type="radio" name="q7" value="b"> b. Hanya dengan pikiran</label>
+        <label><input type="radio" name="q7" value="c"> c. Hanya dengan meninggalkan shalat</label>
+        <label><input type="radio" name="q7" value="d"> d. Hanya dengan mencuri</label>
+        <label><input type="radio" name="q7" value="e"> e. Hanya dengan berkata jujur</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Hukum riddah termasuk dalam kategori...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Hudud</label>
+        <label><input type="radio" name="q8" value="b"> b. Qishash</label>
+        <label><input type="radio" name="q8" value="c"> c. Ta’zir</label>
+        <label><input type="radio" name="q8" value="d"> d. Diyat</label>
+        <label><input type="radio" name="q8" value="e"> e. Fardhu kifayah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Apa tujuan ditetapkannya hukum riddah?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Membalas dendam</label>
+        <label><input type="radio" name="q9" value="b"> b. Menjaga akidah umat Islam</label>
+        <label><input type="radio" name="q9" value="c"> c. Menambah penderitaan</label>
+        <label><input type="radio" name="q9" value="d"> d. Memberi kebebasan mutlak</label>
+        <label><input type="radio" name="q9" value="e"> e. Menghapus ibadah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Orang yang kembali ke Islam setelah riddah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Tetap dihukum</label>
+        <label><input type="radio" name="q10" value="b"> b. Diterima taubatnya dan tidak dihukum</label>
+        <label><input type="radio" name="q10" value="c"> c. Dihukum penjara</label>
+        <label><input type="radio" name="q10" value="d"> d. Wajib membayar diyat</label>
+        <label><input type="radio" name="q10" value="e"> e. Tetap diasingkan</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwD8cRXuNk1P8TQ8LKwhi1_30jcvu8BXlfo9k6eKQcge23juNQ_tiRejOV8Dd8o0g-v5w/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["a","b","a","b","b","b","a","a","b","b"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

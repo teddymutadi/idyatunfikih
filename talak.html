@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Talak</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #9c27b0;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Talak</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal talak -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan talak dalam fikih Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Pemutusan akad nikah oleh suami dengan lafadz tertentu</label>
+        <label><input type="radio" name="q1" value="b"> b. Pemutusan akad nikah oleh istri</label>
+        <label><input type="radio" name="q1" value="c"> c. Putusnya perkawinan karena kematian</label>
+        <label><input type="radio" name="q1" value="d"> d. Perpisahan karena perselisihan</label>
+        <label><input type="radio" name="q1" value="e"> e. Perpisahan karena pindah agama</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Hukum asal talak dalam Islam adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Wajib</label>
+        <label><input type="radio" name="q2" value="b"> b. Haram</label>
+        <label><input type="radio" name="q2" value="c"> c. Mubah</label>
+        <label><input type="radio" name="q2" value="d"> d. Sunnah</label>
+        <label><input type="radio" name="q2" value="e"> e. Makruh</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Dalil tentang talak terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. QS. Al-Baqarah ayat 229</label>
+        <label><input type="radio" name="q3" value="b"> b. QS. An-Nur ayat 32</label>
+        <label><input type="radio" name="q3" value="c"> c. QS. Al-Maidah ayat 45</label>
+        <label><input type="radio" name="q3" value="d"> d. QS. Al-Baqarah ayat 183</label>
+        <label><input type="radio" name="q3" value="e"> e. QS. Yunus ayat 57</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Talak yang dijatuhkan satu atau dua kali disebut...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Talak raj’i</label>
+        <label><input type="radio" name="q4" value="b"> b. Talak ba’in</label>
+        <label><input type="radio" name="q4" value="c"> c. Talak bainunah kubra</label>
+        <label><input type="radio" name="q4" value="d"> d. Talak fasakh</label>
+        <label><input type="radio" name="q4" value="e"> e. Talak taklik</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Talak yang tidak dapat dirujuk lagi disebut...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Talak raj’i</label>
+        <label><input type="radio" name="q5" value="b"> b. Talak ba’in</label>
+        <label><input type="radio" name="q5" value="c"> c. Talak taklik</label>
+        <label><input type="radio" name="q5" value="d"> d. Talak fasakh</label>
+        <label><input type="radio" name="q5" value="e"> e. Talak bainunah sughra</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Apa syarat sahnya talak?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Suami mengucapkan lafadz talak dengan sadar dan jelas</label>
+        <label><input type="radio" name="q6" value="b"> b. Istri mengucapkan lafadz talak</label>
+        <label><input type="radio" name="q6" value="c"> c. Adanya dua saksi</label>
+        <label><input type="radio" name="q6" value="d"> d. Adanya wali</label>
+        <label><input type="radio" name="q6" value="e"> e. Adanya mahar</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Talak tiga sekaligus hukumnya...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Sah dan jatuh talak tiga</label>
+        <label><input type="radio" name="q7" value="b"> b. Tidak sah sama sekali</label>
+        <label><input type="radio" name="q7" value="c"> c. Sah tapi hanya dihitung satu</label>
+        <label><input type="radio" name="q7" value="d"> d. Sah jika ada saksi</label>
+        <label><input type="radio" name="q7" value="e"> e. Sah bila disetujui istri</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Talak raj’i memberi kesempatan suami untuk...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Merujuk istrinya selama masa iddah</label>
+        <label><input type="radio" name="q8" value="b"> b. Menikah lagi dengan wanita lain</label>
+        <label><input type="radio" name="q8" value="c"> c. Membatalkan pernikahan secara sepihak</label>
+        <label><input type="radio" name="q8" value="d"> d. Mengurangi mahar</label>
+        <label><input type="radio" name="q8" value="e"> e. Menghilangkan hak nafkah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Apa hikmah adanya talak dalam Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Memberi jalan keluar jika rumah tangga tidak harmonis</label>
+        <label><input type="radio" name="q9" value="b"> b. Membuat rumah tangga cepat berakhir</label>
+        <label><input type="radio" name="q9" value="c"> c. Menjadikan perceraian sebagai tujuan utama</label>
+        <label><input type="radio" name="q9" value="d"> d. Membebaskan pasangan dari syariat</label>
+        <label><input type="radio" name="q9" value="e"> e. Menghapus akad nikah tanpa alasan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Talak termasuk hukum...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Hudud</label>
+        <label><input type="radio" name="q10" value="b"> b. Muamalah</label>
+        <label><input type="radio" name="q10" value="c"> c. Ibadah</label>
+        <label><input type="radio" name="q10" value="d"> d. Jinayah</label>
+        <label><input type="radio" name="q10" value="e"> e. Ta’zir</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw1e-vSbwU3IDyTtbt61B-z1FHDpRsm0YDqXHN1vsGMnqGvOgSuAi3VPrUdrZNHMw6u/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["a","c","a","a","b","a","a","a","a","b"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>

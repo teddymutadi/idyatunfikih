@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Fikih - Wasiat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+    h2 { margin-bottom: 10px; }
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    form { margin-top: 10px; }
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+    .opts label {
+      display: block;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+    .opts label:hover { background: rgba(0,0,0,0.04); }
+    .opts input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #6a1b9a;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:active { transform: translateY(1px); }
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal Fikih - Wasiat</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas/Jurusan: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal wasiat -->
+    <div class="question">
+      <strong>1. Apa yang dimaksud dengan wasiat dalam fikih Islam?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Pesan seseorang untuk memberikan sebagian harta setelah ia meninggal</label>
+        <label><input type="radio" name="q1" value="b"> b. Perintah untuk membagi zakat</label>
+        <label><input type="radio" name="q1" value="c"> c. Pemberian harta ketika masih hidup</label>
+        <label><input type="radio" name="q1" value="d"> d. Pesan untuk melaksanakan shalat</label>
+        <label><input type="radio" name="q1" value="e"> e. Hibah dalam pernikahan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>2. Dalil tentang wasiat terdapat dalam...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. QS. Al-Baqarah ayat 180</label>
+        <label><input type="radio" name="q2" value="b"> b. QS. An-Nisa ayat 11</label>
+        <label><input type="radio" name="q2" value="c"> c. QS. Al-Baqarah ayat 229</label>
+        <label><input type="radio" name="q2" value="d"> d. QS. Yunus ayat 57</label>
+        <label><input type="radio" name="q2" value="e"> e. QS. An-Nur ayat 32</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>3. Wasiat hanya berlaku setelah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. Pewasiat meninggal dunia</label>
+        <label><input type="radio" name="q3" value="b"> b. Pewasiat menikah</label>
+        <label><input type="radio" name="q3" value="c"> c. Pewasiat pindah rumah</label>
+        <label><input type="radio" name="q3" value="d"> d. Pewasiat berjanji di depan keluarga</label>
+        <label><input type="radio" name="q3" value="e"> e. Pewasiat membayar zakat</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Wasiat tidak boleh lebih dari...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Sepertiga dari harta</label>
+        <label><input type="radio" name="q4" value="b"> b. Setengah dari harta</label>
+        <label><input type="radio" name="q4" value="c"> c. Dua pertiga dari harta</label>
+        <label><input type="radio" name="q4" value="d"> d. Seluruh harta</label>
+        <label><input type="radio" name="q4" value="e"> e. Seperempat dari harta</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Orang yang sudah menjadi ahli waris...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Tidak boleh menerima wasiat</label>
+        <label><input type="radio" name="q5" value="b"> b. Wajib menerima wasiat</label>
+        <label><input type="radio" name="q5" value="c"> c. Bebas menerima atau menolak</label>
+        <label><input type="radio" name="q5" value="d"> d. Mendapat prioritas dalam wasiat</label>
+        <label><input type="radio" name="q5" value="e"> e. Hanya menerima jika ada izin</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Apa hikmah disyariatkannya wasiat?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Membantu orang yang membutuhkan setelah pewasiat meninggal</label>
+        <label><input type="radio" name="q6" value="b"> b. Menambah kekayaan pewasiat</label>
+        <label><input type="radio" name="q6" value="c"> c. Membuat keluarga pewasiat semakin kaya</label>
+        <label><input type="radio" name="q6" value="d"> d. Mengurangi hak waris</label>
+        <label><input type="radio" name="q6" value="e"> e. Menghapus kewajiban zakat</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Wasiat bisa batal jika...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Penerima meninggal lebih dahulu dari pewasiat</label>
+        <label><input type="radio" name="q7" value="b"> b. Pewasiat masih hidup</label>
+        <label><input type="radio" name="q7" value="c"> c. Penerima pindah rumah</label>
+        <label><input type="radio" name="q7" value="d"> d. Penerima menikah</label>
+        <label><input type="radio" name="q7" value="e"> e. Pewasiat kaya raya</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Wasiat berbeda dengan hibah karena...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Wasiat berlaku setelah pewasiat meninggal, hibah saat masih hidup</label>
+        <label><input type="radio" name="q8" value="b"> b. Wasiat harus dengan akad, hibah tidak</label>
+        <label><input type="radio" name="q8" value="c"> c. Hibah hanya boleh kepada ahli waris</label>
+        <label><input type="radio" name="q8" value="d"> d. Wasiat tidak sah jika ada saksi</label>
+        <label><input type="radio" name="q8" value="e"> e. Hibah wajib hukumnya</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Wasiat termasuk dalam hukum...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Muamalah</label>
+        <label><input type="radio" name="q9" value="b"> b. Hudud</label>
+        <label><input type="radio" name="q9" value="c"> c. Jinayah</label>
+        <label><input type="radio" name="q9" value="d"> d. Ibadah</label>
+        <label><input type="radio" name="q9" value="e"> e. Ta’zir</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Tujuan utama wasiat adalah...</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Menjaga amanah dan memberi manfaat setelah meninggal</label>
+        <label><input type="radio" name="q10" value="b"> b. Membuat keluarga berpisah</label>
+        <label><input type="radio" name="q10" value="c"> c. Menambah harta waris</label>
+        <label><input type="radio" name="q10" value="d"> d. Membuat ahli waris terbebani</label>
+        <label><input type="radio" name="q10" value="e"> e. Menghapus kewajiban syariat</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwPEcONY209uycHhE-vhC3M2qCROe2DYKLC8rKsE0cDFeL0gi7MmABQwOg_HfHEM_L4/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // kunci jawaban
+      const kunci = ["a","a","a","a","a","a","a","a","a","a"]; 
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; 
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>
