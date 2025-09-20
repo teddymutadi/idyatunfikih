@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+
+    h2 { margin-bottom: 10px; }
+
+    label.input-field {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    form { margin-top: 10px; }
+
+    .question { margin-bottom: 18px; }
+    .question strong { display: block; margin-bottom: 8px; }
+
+    /* --- Perubahan utama: tampilkan opsi secara vertikal --- */
+    .opts label {
+      display: block;          /* membuat tiap opsi berada di baris baru */
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .12s;
+    }
+
+    .opts label:hover {
+      background: rgba(0,0,0,0.04);
+    }
+
+    .opts input[type="radio"] {
+      margin-right: 8px;      /* jarak antara radio dan teks */
+      vertical-align: middle;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:active { transform: translateY(1px); }
+
+    #hasil { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Latihan Soal</h2>
+
+  <label class="input-field">Nama: <input type="text" id="nama" required></label><br>
+  <label class="input-field">Kelas: <input type="text" id="kelas" required></label><br>
+  <label class="input-field">Nomor Absen: <input type="number" id="absen" required></label><br>
+
+  <form id="quizForm" onsubmit="return false;">
+    <!-- 10 soal pembunuhan - tiap soal punya opsi a-e -->
+    <div class="question">
+      <strong>1. Dalam ilmu fikih, pembunuhan yang disengaja termasuk jenis apa?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> a. Qatl khata' (pembunuhan tidak disengaja)</label>
+        <label><input type="radio" name="q1" value="b"> b. Qatl 'am (pembunuhan disengaja)</label>
+        <label><input type="radio" name="q1" value="c"> c. Qatl shibh (pembunuhan yang samar)</label>
+        <label><input type="radio" name="q1" value="d"> d. Qatl tadarruj (pembunuhan dalam kondisi bertahap)</label>
+        <label><input type="radio" name="q1" value="e"> e. Qatl ta'zir (hukuman takdir)</label>
+      </div>
+    </div>
+
+    <!-- (soal 2 s/d 10 sama struktur seperti semula) -->
+    <div class="question">
+      <strong>2. Hukuman diyat biasanya dikenakan pada kasus:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> a. Pembunuhan syiddah (pembunuhan berat) tanpa unsur sengaja</label>
+        <label><input type="radio" name="q2" value="b"> b. Pembunuhan yang disengaja tanpa bukti</label>
+        <label><input type="radio" name="q2" value="c"> c. Pembunuhan tidak disengaja atau kelalaian yang menyebabkan mati</label>
+        <label><input type="radio" name="q2" value="d"> d. Pembunuhan dalam peperangan saja</label>
+        <label><input type="radio" name="q2" value="e"> e. Kasus pencurian yang berujung pada kematian</label>
+      </div>
+    </div>
+
+    <!-- ... ulangi untuk soal 3-10 sama seperti file asli ... -->
+    <div class="question">
+      <strong>3. Apa beda qisas dan diyat?</strong>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> a. Qisas bentuk damai, diyat hukuman mati</label>
+        <label><input type="radio" name="q3" value="b"> b. Qisas adalah pembalasan setimpal; diyat adalah kompensasi finansial</label>
+        <label><input type="radio" name="q3" value="c"> c. Qisas untuk maling; diyat untuk pembunuh</label>
+        <label><input type="radio" name="q3" value="d"> d. Keduanya sama</label>
+        <label><input type="radio" name="q3" value="e"> e. Qisas hanya untuk luka, diyat untuk pembunuhan</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>4. Dalam hal pembunuhan tidak sengaja, pihak keluarga korban biasanya berhak:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> a. Menuntut hukuman mati saja</label>
+        <label><input type="radio" name="q4" value="b"> b. Menuntut qisas tanpa opsi lain</label>
+        <label><input type="radio" name="q4" value="c"> c. Menerima diyat atau memaafkan pelaku</label>
+        <label><input type="radio" name="q4" value="d"> d. Mengusir keluarga pelaku</label>
+        <label><input type="radio" name="q4" value="e"> e. Mengajukan tuntutan pidana tanpa kompensasi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>5. Pembunuhan yang dilakukan saat perang (dengan syarat-syarat syariah) termasuk kategori:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> a. Qatl 'am tanpa konsekuensi</label>
+        <label><input type="radio" name="q5" value="b"> b. Qatl fi sabilillah (dalam konteks hukum perang tertentu)</label>
+        <label><input type="radio" name="q5" value="c"> c. Qatl khata' karena kebingungan</label>
+        <label><input type="radio" name="q5" value="d"> d. Qatl ta'zir</label>
+        <label><input type="radio" name="q5" value="e"> e. Qatl diya' (kompensasi wajib)</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>6. Syarat utama yang perlu ada untuk menerapkan qisas adalah:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> a. Ada bukti bahwa korban sakit sebelumnya</label>
+        <label><input type="radio" name="q6" value="b"> b. Pembunuhan dilakukan karena kelalaian</label>
+        <label><input type="radio" name="q6" value="c"> c. Pembunuhan disengaja dan terbukti oleh bukti atau pengakuan</label>
+        <label><input type="radio" name="q6" value="d"> d. Keluarga korban menolak qisas</label>
+        <label><input type="radio" name="q6" value="e"> e. Pelaku anak di bawah umur selalu bebas</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>7. Jika pelaku pembunuhan mengakui perbuatannya lalu keluarga korban memaafkan, akibatnya:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="a"> a. Pelaku tetap dihukum mati</label>
+        <label><input type="radio" name="q7" value="b"> b. Keluarga korban berhak menuntut lebih</label>
+        <label><input type="radio" name="q7" value="c"> c. Qisas dibatalkan dan seringkali diyat atau maaf diberlakukan</label>
+        <label><input type="radio" name="q7" value="d"> d. Pelaku dibiarkan tanpa sanksi apapun selamanya</label>
+        <label><input type="radio" name="q7" value="e"> e. Kasus diabaikan pemerintah</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>8. Pembunuhan akibat kecelakaan lalu lintas biasanya dikategorikan sebagai:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="a"> a. Qatl 'am</label>
+        <label><input type="radio" name="q8" value="b"> b. Qatl khata' (tidak sengaja/kelalaian)</label>
+        <label><input type="radio" name="q8" value="c"> c. Qatl shurb (minum beracun)</label>
+        <label><input type="radio" name="q8" value="d"> d. Qatl fi sabilillah</label>
+        <label><input type="radio" name="q8" value="e"> e. Qatl ta'zir</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>9. Dalam penerapan hukum pada kasus pembunuhan, bukti yang kuat meliputi:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="a"> a. Kesaksian satu orang saja tanpa tanda lain</label>
+        <label><input type="radio" name="q9" value="b"> b. Dua saksi yang dapat dipercaya atau pengakuan pelaku</label>
+        <label><input type="radio" name="q9" value="c"> c. Desas-desus komunitas</label>
+        <label><input type="radio" name="q9" value="d"> d. Tulisan kabar tanpa pemeriksaan</label>
+        <label><input type="radio" name="q9" value="e"> e. Bukti mimpi</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>10. Tujuan syariat dalam mengatur hukum pembunuhan antara lain:</strong>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="a"> a. Mempercepat balas dendam</label>
+        <label><input type="radio" name="q10" value="b"> b. Melindungi nyawa dan menegakkan keadilan</label>
+        <label><input type="radio" name="q10" value="c"> c. Mengurangi nilai nyawa</label>
+        <label><input type="radio" name="q10" value="d"> d. Mendorong peperangan</label>
+        <label><input type="radio" name="q10" value="e"> e. Menghapus semua hukuman</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="koreksi()">Lihat Hasil</button>
+  </form>
+
+  <h3 id="hasil"></h3>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxwamdUz4sYZlNStIW10tbRqTQOuO2h3gvD8l6XybgOwYvxTnO_VDmPszS57UErP4YY8g/exec";
+
+    function koreksi() {
+      let skor = 0;
+      // PERHATIAN:
+      // Kunci di bawah harus berupa huruf (a-e) agar cocok dengan value opsi.
+      // Saya tidak mengubah kunci karena saya tidak tahu jawaban resmi Anda.
+      // Contoh: const kunci = ["b","c","b","c","b","c","c","b","b","b"];
+      const kunci = ["20","45000","29","56","1/2","8","30","4","5/5","L"];
+
+      for (let i = 1; i <= 10; i++) {
+        let jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+        if (jawaban && jawaban.value === kunci[i-1]) {
+          skor++;
+        }
+      }
+
+      let nilai = skor * 10; // 10 soal, bobot 10 poin
+      document.getElementById("hasil").innerText = "Nilai Anda: " + nilai;
+
+      // Kirim ke Google Sheet
+      const nama = document.getElementById("nama").value;
+      const kelas = document.getElementById("kelas").value;
+      const absen = document.getElementById("absen").value;
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify({ nama, kelas, absen, nilai }),
+      })
+      .then(res => alert("Data tersimpan di Spreadsheet"))
+      .catch(err => alert("Terjadi kesalahan: " + err));
+    }
+  </script>
+</body>
+</html>
